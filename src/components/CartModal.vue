@@ -13,12 +13,12 @@
           <b-col cols="3"></b-col>
           <b-col>مقدار</b-col>
         </b-row>
-        <b-row v-for="(item,index) in cart" :key="index">
+        <b-row v-if="cart.length" v-for="(item,index) in cart" :key="index">
           <b-col cols="1">{{ index + 1 }}.</b-col>
           <b-col cols="3">{{ item.item }}</b-col>
           <b-col class="d-flex justify-content-end">
             <b-button href="#" variant="outline-primary" class="btn mx-1 urdu-font"
-                      @click="item.qty>0 ? item.qty=item.qty-1 : item.qty">کم
+                      @click="decreaseQty(item)">کم
             </b-button>
 
             <b-form-group
@@ -33,7 +33,7 @@
               ></b-form-input>
             </b-form-group>
 
-            <b-button href="#" variant="outline-primary" class="btn mx-1 urdu-font" @click="item.qty=item.qty+1">زیادہ
+            <b-button href="#" variant="outline-primary" class="btn mx-1 urdu-font" @click="increaseQty(item)">زیادہ
             </b-button>
           </b-col>
         </b-row>
@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import {mapGetters} from 'vuex';
+import {mapGetters, mapActions} from 'vuex';
 
 export default {
   props: {
@@ -74,6 +74,9 @@ export default {
   },
   computed: {
     ...mapGetters('card', ['cart'])
+  },
+  methods:{
+    ...mapActions('card',['decreaseQty','increaseQty'])
   }
 }
 </script>

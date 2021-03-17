@@ -17,7 +17,7 @@
 
           <b-badge pill variant="light" @click="showModal=!showModal">
             <b-icon icon="cart2" font-scale="2" variant="primary"></b-icon>
-            {{ cart.length }}
+            {{ totalCount}}
           </b-badge>
         </b-nav-item>
       </b-navbar-nav>
@@ -38,7 +38,14 @@ export default {
   },
   components: {CartModal},
   computed: {
-    ...mapGetters('card', ['cart'])
+    ...mapGetters('card', ['cart']),
+    totalCount(){
+      let qty=0;
+      this.cart.forEach(i=>{
+        qty+=i.qty;
+      })
+      return qty;
+    }
   },
   methods: {
     hide() {

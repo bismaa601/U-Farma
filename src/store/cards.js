@@ -36,6 +36,7 @@ export default {
                     src: './../assets/sona-dap.jpg',
                     des: '',
                     price: 'Rs. 4,100',
+                    type: 'fertilizers',
                     audio: './../audio/dap.mp3'
                 },
                 {
@@ -43,6 +44,7 @@ export default {
                     item: 'سرسبز یوریا',
                     src: './../assets/sarsabz-urea.jpg',
                     des: '',
+                    type: 'fertilizers',
                     price: 'Rs. 1,760',
                     audio: './../audio/sarsabz-urea.mp3'
                 },
@@ -52,6 +54,7 @@ export default {
                     src: './../assets/sona-urea.jpg',
                     des: '',
                     price: 'Rs. 1,760',
+                    type: 'fertilizers',
                     audio: './../audio/sona-urea.mp3'
                 },
                 {
@@ -59,6 +62,7 @@ export default {
                     item: 'اینگرو یوریا',
                     src: './../assets/engro-urea.jpg',
                     des: '',
+                    type: 'fertilizers',
                     price: 'Rs. 1,760',
                     audio: './../audio/engro-urea.mp3'
                 },
@@ -67,6 +71,7 @@ export default {
                     item: 'ایس او پی',
                     src: './../assets/engro-sop.jpg',
                     des: '',
+                    type: 'fertilizers',
                     price: 'Rs. 4,310',
                     audio: './../audio/sop.mp3'
                 },
@@ -77,6 +82,7 @@ export default {
                     item: 'ٹماٹر',
                     src: './../assets/tomato-seeds.jpg',
                     des: '',
+                    type: 'seeds',
                     price: 'Rs. 100',
                     audio: './../audio/tmater.mp3'
                 },
@@ -85,6 +91,7 @@ export default {
                     item: 'کھیرا',
                     src: './../assets/cucumber-seeds.jpg',
                     des: '',
+                    type: 'seeds',
                     price: 'Rs. 760',
                     audio: './../audio/khera.mp3'
                 },
@@ -93,6 +100,7 @@ export default {
                     item: 'مرچ',
                     src: './../assets/pepper-seed.jpg',
                     des: '',
+                    type: 'seeds',
                     price: 'Rs. 160',
                     audio: './../audio/mirch.mp3'
                 },
@@ -101,6 +109,7 @@ export default {
                     item: 'گوبھی',
                     src: './../assets/cabbage-seeds.jpg',
                     des: '',
+                    type: 'seeds',
                     price: 'Rs. 70',
                     audio: './../audio/gobhi.mp3'
                 },
@@ -109,6 +118,7 @@ export default {
                     item: 'کدو',
                     src: './../assets/squash-seeds.jpg',
                     des: '',
+                    type: 'seeds',
                     price: 'Rs. 130',
                     audio: './../audio/kadu.mp3'
                 },
@@ -119,6 +129,7 @@ export default {
                     item: 'ٹیکامن-میکس',
                     src: './../assets/tecamin-max.jpg',
                     des: '',
+                    type: 'agrochemicals',
                     price: 'Rs. 100',
                     audio: './../audio/tecamin-max.mp3'
                 },
@@ -127,6 +138,7 @@ export default {
                     item: 'ڈیناڈیم',
                     src: './../assets/danadim.png',
                     des: '',
+                    type: 'agrochemicals',
                     price: 'Rs. 760',
                     audio: './../audio/danadim.mp3'
                 },
@@ -135,6 +147,7 @@ export default {
                     item: 'پرائموکسن',
                     src: './../assets/primoxon.jpg',
                     des: '',
+                    type: 'agrochemicals',
                     price: 'Rs. 160',
                     audio: './../audio/primoxon.mp3'
                 },
@@ -143,6 +156,7 @@ export default {
                     item: 'نانوک',
                     src: './../assets/nanok.png',
                     des: '',
+                    type: 'agrochemicals',
                     price: 'Rs. 70',
                     audio: './../audio/nanok.mp3'
                 },
@@ -151,6 +165,7 @@ export default {
                     item: 'پرائم کل',
                     src: './../assets/primekill.jpg',
                     des: '',
+                    type: 'agrochemicals',
                     price: 'Rs. 130',
                     audio: './../audio/primekill.mp3'
                 },
@@ -407,12 +422,45 @@ export default {
     },
     mutations: {
         addToCard(state, payload) {
-            state.cart.push({...payload,qty:0})
-        }
+            let exist = state.cart.find(i => i.type === payload.type && i.id === payload.id);
+            if (exist) {
+                state.cart.forEach(i => {
+                    if (i.type === payload.type && i.id === payload.id) {
+                        i.qty++;
+                    }
+                })
+            } else {
+                state.cart.push({...payload, qty: 1})
+            }
+        },
+        decreaseQty(state, payload) {
+            state.cart.forEach(i => {
+                if (i.type === payload.type && i.id === payload.id) {
+                    if (i.qty === 1) {
+                        state.cart.splice(state.cart.indexOf(payload), 1)
+                    } else {
+                        --i.qty;
+                    }
+                }
+            })
+        },
+        increaseQty(state, payload) {
+            state.cart.forEach(i => {
+                if (i.type === payload.type && i.id === payload.id) {
+                    ++i.qty;
+                }
+            })
+        },
     },
     actions: {
         addToCart({commit}, item) {
             commit('addToCard', item)
+        },
+        decreaseQty({commit}, payload = 1) {
+            commit('decreaseQty', payload)
+        },
+        increaseQty({commit}, payload) {
+            commit('increaseQty', payload)
         }
     }
 }
