@@ -18,10 +18,16 @@ export default {
 </script>
 
 <style lang="css">
+body, html {
+  height: 100%;
+}
+#app{
+  height: 100%;
+}
 @import url(http://fonts.googleapis.com/earlyaccess/notonastaliqurdudraft.css);
   :root {
     --blue: #1e90ff;
-    --white: #ffffff; 
+    --white: #ffffff;
   }
 
   *{
@@ -49,18 +55,6 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .content-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #app{
-    background: url('./../public/assets/bg.jpg') no-repeat;
-    background-size: cover;
   }
 
   .cs{
