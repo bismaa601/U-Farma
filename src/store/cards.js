@@ -398,13 +398,21 @@ export default {
                 },
             ],
         },
-        cart:[]
+        cart: []
     },
     getters: {
         categories: (state) => state.cards,
         cartItems: (state) => state.cartItems,
-        cart: (state) => state.cartItems,
+        cart: (state) => state.cart,
     },
-    mutations: {},
-    actions: {}
+    mutations: {
+        addToCard(state, payload) {
+            state.cart.push({...payload,qty:0})
+        }
+    },
+    actions: {
+        addToCart({commit}, item) {
+            commit('addToCard', item)
+        }
+    }
 }

@@ -26,18 +26,17 @@
         </b-row>
       </b-card-text>
       <!-- <b-button href="#" variant="primary" class="w-100 urdu-font" @click="showModal = !showModal">خریدنا</b-button> -->
-      <b-button href="#" variant="primary" class="w-100 urdu-font" @click="showModal = !showModal">خریدنا</b-button>
-      <CartModal :showModal="showModal"/>
+      <b-button href="#" variant="primary" class="w-100 urdu-font" @click="addToCart(cartItem)">خریدنا</b-button>
     </b-card>
 
 
-    
+
   </div>
 </template>
 
 <script>
 import CartModal from './CartModal';
-
+import {mapActions} from "vuex";
 export default {
   components:{
     CartModal
@@ -53,6 +52,7 @@ export default {
   },
 
   methods:{
+    ...mapActions('card',['addToCart']),
     audio(cartItem){
       var sound = new Audio(cartItem.audio);
       sound.play();

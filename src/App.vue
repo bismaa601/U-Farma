@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navbar />
+    <Navbar  />
     <router-view class="cs"/>
   </div>
 </template>
@@ -9,11 +9,12 @@
 // @ is an alias to /src
 import Navbar from '@/components/Navbar.vue';
 
+
 export default {
   name: 'app',
   components: {
     Navbar
-  }
+  },
 }
 </script>
 
