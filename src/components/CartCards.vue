@@ -1,17 +1,17 @@
 <template>
- <div>
+  <div>
     <b-card
-      :img-src="cartItem.src"
-      img-alt="Image"
-      img-top
-      img-height="160"
-      tag="article"
-      class="mb-5 card-anim shadow card-imgS"
+        :img-src="cartItem.src"
+        img-alt="Image"
+        img-top
+        img-height="160"
+        tag="article"
+        class="mb-5 card-anim shadow card-imgS"
     >
       <b-card-text>
         <b-row class="mb-1">
           <b-col>
-            <h4 class="urdu-font">{{cartItem.item}}</h4>
+            <h4 class="urdu-font">{{ cartItem.item }}</h4>
           </b-col>
         </b-row>
         <b-row class="mt-3">
@@ -26,9 +26,10 @@
         </b-row>
       </b-card-text>
       <!-- <b-button href="#" variant="primary" class="w-100 urdu-font" @click="showModal = !showModal">خریدنا</b-button> -->
-      <b-button href="#" variant="primary" class="w-100 urdu-font" @click="addToCart(cartItem)">خریدنا</b-button>
+      <b-button href="#" variant="primary" class="w-100 urdu-font" @click="addToCart(cartItem)">
+        ({{ total(cartItem) }})خریدنا
+      </b-button>
     </b-card>
-
 
 
   </div>
@@ -36,24 +37,36 @@
 
 <script>
 import CartModal from './CartModal';
-import {mapActions} from "vuex";
+import {mapActions, mapGetters} from "vuex";
+
 export default {
-  components:{
+  components: {
     CartModal
   },
   props: {
-   cartItem:Object
+    cartItem: Object
   },
 
   data() {
-    return{
+    return {
       showModal: false
     }
   },
-
-  methods:{
-    ...mapActions('card',['addToCart']),
-    audio(cartItem){
+  computed: {
+    ...mapGetters('card', ['cart'])
+  },
+  methods: {
+    ...mapActions('card', ['addToCart']),
+    total(item) {
+      let qty = 0;
+      this.cart.forEach(i => {
+        if (i.type === item.type && i.id === item.id) {
+          qty += i.qty;
+        }
+      })
+      return qty;
+    },
+    audio(cartItem) {
       var sound = new Audio(cartItem.audio);
       sound.play();
     }
@@ -63,15 +76,15 @@ export default {
 
 
 <style scoped>
-  .card-anim{
-    width: 260px;
-    height: 390px;
-    padding: 15px 10px;
-    transition: 0.3s;
-  }
+.card-anim {
+  width: 260px;
+  height: 390px;
+  padding: 15px 10px;
+  transition: 0.3s;
+}
 
-  .card-anim:hover{
-    transform: scale(1.05);
-  }
+.card-anim:hover {
+  transform: scale(1.05);
+}
 
 </style>
