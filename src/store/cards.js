@@ -413,7 +413,7 @@ export default {
                 },
             ],
         },
-        cart: []
+        cart: localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : []
     },
     getters: {
         categories: (state) => state.cards,
@@ -453,8 +453,11 @@ export default {
         },
     },
     actions: {
-        addToCart({commit}, item) {
+        addToCart({commit, dispatch}, item) {
             commit('addToCard', item)
+        },
+        updateCart({state}) {
+            localStorage.setItem('cart', JSON.stringify(state.cart))
         },
         decreaseQty({commit}, payload = 1) {
             commit('decreaseQty', payload)
