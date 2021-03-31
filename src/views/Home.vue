@@ -37,7 +37,7 @@ export default {
 
 
 <style scoped>
-.main {
+body {
   background-color: red;
   /*background: url('/public/assets/bg.jpg') no-repeat;*/
   /* The image used */

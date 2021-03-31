@@ -37,6 +37,16 @@ export default {
 <style lang="css">
 body, html {
   height: 100%;
+  /*background: url('/public/assets/bg.jpg') no-repeat;*/
+  /* The image used */
+  background-image: url("https://ied.eu/wp-content/uploads/2018/05/agriculture-economy.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
 }
 
 #app {
