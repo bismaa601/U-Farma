@@ -472,11 +472,16 @@ export default {
         },
     },
     actions: {
+        clearCart({commit,state}, item) {
+            localStorage.setItem('cart', [])
+            state.cart = [];
+        },
         addToCart({commit, dispatch}, item) {
             commit('addToCard', item)
         },
         updateCart({state}) {
             localStorage.setItem('cart', JSON.stringify(state.cart))
+
         },
         decreaseQty({commit}, payload = 1) {
             commit('decreaseQty', payload)

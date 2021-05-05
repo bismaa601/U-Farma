@@ -47,7 +47,7 @@
         </li>
       </ul>
       <ul class="navbar-nav ">
-        <li class="nav-item" @click="showModal=true">
+        <li class="nav-item" @click="show">
           <a class="nav-link" href="#">
             <i class="fa fa-cart-plus">
               <span class="badge badge-success">{{ totalCount }}</span>
@@ -57,7 +57,7 @@
         </li>
       </ul>
     </div>
-    <CartModal @hide="hide" :show-modal="showModal"/>
+    <CartModal @hide="hide" v-if="cart.length" :show-modal="showModal"/>
   </nav>
 
 </template>
@@ -84,6 +84,9 @@ export default {
     }
   },
   methods: {
+    show() {
+      this.showModal = true
+    },
     hide() {
       this.showModal = false
     }
@@ -95,9 +98,11 @@ export default {
 
 <style scoped>
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-a:hover{
+
+a:hover {
   text-decoration: none;
 }
+
 .navbar-icon-top .navbar-nav .nav-link > .fa {
   position: relative;
   width: 36px;
