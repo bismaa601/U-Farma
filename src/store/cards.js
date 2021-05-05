@@ -182,7 +182,9 @@ export default {
                             src: './../assets/aphids.png',
                             des: 'پودوں کی یہ عام بیماری گرم ماحول اور مٹی میں نائٹروجن کے اعلی اجزاء کے ذریعہ لائی جاتی ہے۔',
                             des1: 'This common plant disease is brought about by warm environments and high contents of nitrogen in the soil.',
-                            audio: './../audio/aphids.mp3'
+                            audio: './../audio/aphids.mp3',
+                            cure: 'Alag',
+                            symptoms: 'symptoms'
                         },
                         {
                             id: 1,
@@ -190,7 +192,9 @@ export default {
                             src: './../assets/apple-scab.jpg',
                             des: 'پھلوں اور پتیوں پر خارش کے دھبے دبی ہوئے ہیں اور اس کے بیچ میں مخمل کے بیضہ ہو سکتے ہیں۔',
                             des1: 'Scabby spots on fruits and leaves are sunken and may have velvety spores in the center.',
-                            audio: './../audio/apple-scab.mp3'
+                            audio: './../audio/apple-scab.mp3',
+                            cure: 'Alag',
+                            symptoms: 'symptoms'
                         },
                         {
                             id: 2,
@@ -198,7 +202,9 @@ export default {
                             src: './../assets/anthracnose.jpg',
                             des: 'متاثرہ پودے تنوں ، پتیوں یا پھلوں پر تاریک ، پانی سے بھیگے گھاووں کی نشوونما کرتے ہیں۔',
                             des1: 'Infected plants develop dark, water soaked lesions on stems, leaves or fruit.',
-                            audio: './../audio/anthracnose.mp3'
+                            audio: './../audio/anthracnose.mp3',
+                            cure: 'Alag',
+                            symptoms: 'symptoms'
                         },
                         {
                             id: 3,
@@ -206,7 +212,9 @@ export default {
                             src: './../assets/leaf-curl.jpg',
                             des: 'پچھواڑے آڑو اور نیکٹری کے درختوں کے پھول ، پھل ، پتیوں اور ٹہنوں کو متاثر کرتا ہے۔',
                             des1: 'Affects the blossoms, fruit, leaves and shoots of backyard peach and nectarine trees.',
-                            audio: './../audio/leaf-curl.mp3'
+                            audio: './../audio/leaf-curl.mp3',
+                            cure: 'Alag',
+                            symptoms: 'symptoms'
                         },
                         {
                             id: 4,
@@ -214,7 +222,9 @@ export default {
                             src: './../assets/rust.jpg',
                             des: 'سرخی مائل نارنجی بیضہ عوام بنیادی طور پر نچلے پتے کی سطح پر پائے جاتے ہیں۔',
                             des1: 'Reddish-orange spore masses are found primarily on the surface of lower leaves.',
-                            audio: './../audio/rust.mp3'
+                            audio: './../audio/rust.mp3',
+                            cure: 'Alag',
+                            symptoms: 'symptoms'
                         },
                     ]
                 },
@@ -230,7 +240,9 @@ export default {
                             src: './../assets/aphids.png',
                             des: 'پودوں کی یہ عام بیماری گرم ماحول اور مٹی میں نائٹروجن کے اعلی اجزاء کے ذریعہ لائی جاتی ہے۔',
                             des1: 'This common plant disease is brought about by warm environments and high contents of nitrogen in the soil.',
-                            audio: './../audio/aphids.mp3'
+                            audio: './../audio/aphids.mp3',
+                            cure: 'Alag',
+                            symptoms: 'symptoms'
                         },
                         {
                             id: 1,
@@ -238,7 +250,9 @@ export default {
                             src: './../assets/apple-scab.jpg',
                             des: 'پھلوں اور پتیوں پر خارش کے دھبے دبی ہوئے ہیں اور اس کے بیچ میں مخمل کے بیضہ ہو سکتے ہیں۔',
                             des1: 'Scabby spots on fruits and leaves are sunken and may have velvety spores in the center.',
-                            audio: './../audio/apple-scab.mp3'
+                            audio: './../audio/apple-scab.mp3',
+                            cure: 'Alag',
+                            symptoms: 'symptoms'
                         },
                         {
                             id: 2,
@@ -246,7 +260,9 @@ export default {
                             src: './../assets/anthracnose.jpg',
                             des: 'متاثرہ پودے تنوں ، پتیوں یا پھلوں پر تاریک ، پانی سے بھیگے گھاووں کی نشوونما کرتے ہیں۔',
                             des1: 'Infected plants develop dark, water soaked lesions on stems, leaves or fruit.',
-                            audio: './../audio/anthracnose.mp3'
+                            audio: './../audio/anthracnose.mp3',
+                            cure: 'Alag',
+                            symptoms: 'symptoms'
                         },
                         {
                             id: 3,
@@ -254,7 +270,9 @@ export default {
                             src: './../assets/leaf-curl.jpg',
                             des: 'پچھواڑے آڑو اور نیکٹری کے درختوں کے پھول ، پھل ، پتیوں اور ٹہنوں کو متاثر کرتا ہے۔',
                             des1: 'Affects the blossoms, fruit, leaves and shoots of backyard peach and nectarine trees.',
-                            audio: './../audio/leaf-curl.mp3'
+                            audio: './../audio/leaf-curl.mp3',
+                            cure: 'Alag',
+                            symptoms: 'symptoms'
                         },
                         {
                             id: 4,
@@ -262,7 +280,9 @@ export default {
                             src: './../assets/rust.jpg',
                             des: 'سرخی مائل نارنجی بیضہ عوام بنیادی طور پر نچلے پتے کی سطح پر پائے جاتے ہیں۔',
                             des1: 'Reddish-orange spore masses are found primarily on the surface of lower leaves.',
-                            audio: './../audio/rust.mp3'
+                            audio: './../audio/rust.mp3',
+                            cure: 'Alag',
+                            symptoms: 'symptoms'
                         },
                     ]
                 },

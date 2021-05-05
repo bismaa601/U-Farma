@@ -19,7 +19,7 @@
         </b-row>
       </b-card-text>
         <b-button :diseases="cartItem" variant="primary" class="w-100 urdu-font" @click="showModal = !showModal">بیماریاں</b-button>
-        <DiseaseModal :showModal="showModal"/>
+        <DiseaseModal :showModal="showModal" :diseases="cartItem.diseases"/>
     </b-card>
   </div>
 </template>
