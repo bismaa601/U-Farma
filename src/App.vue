@@ -24,7 +24,6 @@ export default {
   watch: {
     'cart': {
       handler() {
-        console.log('test');
         this.updateCart();
       },
       deep: true,

@@ -17,11 +17,6 @@
             </b-button>
           </b-col>
         </b-row>
-        <!-- <b-row class="mt-3">
-          <b-col>
-            <h4 class="urdu-font des">{{cartItem.des}}</h4>
-          </b-col>
-        </b-row> -->
       </b-card-text>
         <b-button :diseases="cartItem" variant="primary" class="w-100 urdu-font" @click="showModal = !showModal">بیماریاں</b-button>
         <DiseaseModal :showModal="showModal"/>

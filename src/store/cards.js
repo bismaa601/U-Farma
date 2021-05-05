@@ -16,17 +16,16 @@ export default {
             },
             {
                 id: 2,
-                src: './../assets/crops.jpg',
-                route: '/product/crops',
-                title: 'فصلوں کی بیماریں'
-            },
-            {
-                id: 3,
                 src: './../assets/agrochemicals.png',
                 route: '/product/agrochemicals',
                 title: 'کیڑے مار ادویات'
             },
-
+            {
+                id: 3,
+                src: './../assets/crops.jpg',
+                route: '/product/crops',
+                title: 'فصلوں کی بیماریں'
+            },
         ],
         cartItems: {
             fertilizers: [
