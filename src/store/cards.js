@@ -26,6 +26,12 @@ export default {
                 route: '/product/crops',
                 title: 'فصلوں کی بیماریں'
             },
+            {
+                id: 3,
+                src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKgkdg9KB51ZeuzebQYbG0aGfW-wxkvMv8CnGvrvVQgKjUNGB_Dw594VOvSwcjZjN6AcE&usqp=CAU',
+                route: '/product/seedsDiseases',
+                title: 'بیج کی بیماریں'
+            },
         ],
         cartItems: {
             fertilizers: [
@@ -429,6 +435,29 @@ export default {
                             audio: './../audio/rust.mp3'
                         },
                     ]
+                },
+            ],
+            seedsDiseases: [
+                {
+                    id: 0,
+                    item: 'بیج بلائٹ',
+                    src: './../assets/seed_disease/1. seedling blight.jpg',
+                    des: 'پودوں کی یہ عام بیماری گرم ماحول اور مٹی میں نائٹروجن کے اعلی اجزاء کے ذریعہ لائی جاتی ہے۔',
+                    des1: 'This common plant disease is brought about by warm environments and high contents of nitrogen in the soil.',
+                    audio: './../audio/aphids.mp3',
+                    cure: '',
+                    symptoms: 'پودوں کا نقصان ، ناقص اسٹیبلشمنٹ ، اسٹیم بیسڈ براؤننگ ، فوٹ روٹس اور ایئر بلائٹس۔',
+                    reasons: 'کم پیداوار اور ممکنہ مائکوٹوکسن کے مسائل۔',
+                }, {
+                    id: 1,
+                    item: 'بیجوں والا کامن بنٹ',
+                    src: './../assets/seed_disease/2. Seed-borne common bunt.jpg',
+                    des: 'پودوں کی یہ عام بیماری گرم ماحول اور مٹی میں نائٹروجن کے اعلی اجزاء کے ذریعہ لائی جاتی ہے۔',
+                    des1: 'This common plant disease is brought about by warm environments and high contents of nitrogen in the soil.',
+                    audio: './../audio/aphids.mp3',
+                    cure: '',
+                    symptoms: 'متاثرہ ایئرز میں اناج کی جگہ بیج کی طرح \'بنٹ بالز\' لیتے ہیں جن میں سے ہر ایک میں لاکھوں چکنائی ، کالی ، بدبودار بو (جیسے بوسیدہ مچھلی) کے بیضوں ہوتے ہیں۔',
+                    reasons: 'ممکنہ طور پر اناج کے معیار میں کمی سے فصلوں کو مکمل طور پر مسترد کردیا جائے۔',
                 },
             ],
         },

@@ -14,14 +14,19 @@
               <p class="urdu-font text-center px-5 pt-3 pb-5">{{disease.des}}</p>
             </b-col>
             <b-col md="6">
-              <b-card-body title="علامات" style="text-align:right">
+              <b-card-body title="علامات" style="text-align:right" v-if="disease.symptoms">
                 <b-card-text class="urdu-font text-center">
                   {{disease.symptoms}}
                 </b-card-text>
               </b-card-body>
-              <b-card-body title="علاج" style="text-align:right">
+              <b-card-body title="علاج" style="text-align:right" v-if="disease.cure">
                 <b-card-text class="urdu-font text-center">
                   {{disease.cure}}
+                </b-card-text>
+              </b-card-body>
+              <b-card-body title="اثرات" style="text-align:right" v-if="disease.reasons">
+                <b-card-text class="urdu-font text-center">
+                  {{disease.reasons}}
                 </b-card-text>
               </b-card-body>
             </b-col>

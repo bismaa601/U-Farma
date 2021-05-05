@@ -7,7 +7,6 @@
         centered
         hide-footer
         @hide="$emit('hide',null)"
-        hide-header-close
     >
       <b-container>
         <div v-if="!info">

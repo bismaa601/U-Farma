@@ -58,8 +58,8 @@ export default {
 
 <style scoped>
   .card-anim{
-    width: 260px;
-    height: 330px;
+    width: 350px;
+    /*height: 400px;*/
     padding: 15px 10px;
     transition: 0.3s;
   }

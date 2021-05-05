@@ -8,9 +8,14 @@
       </b-row>
       <b-row no-gutters class="pt-5 justify-content-center">
         <b-col col="4" lg="4" v-for="item in cartItems[$route.params.type]" :key="item.id">
-          <CartCards :cartItem="item" v-if="$route.params.type!='crops'"/>
+          <CartCards :cartItem="item" v-if="!['crops','seedsDiseases'].includes($route.params.type)"/>
           <!-- <DiseaseCards :cartItem="item" v-else-if="$route.params.type=='diseases'"/> -->
-          <CropCards :cartItem="item" v-else/>
+          <CropCards :cartItem="item" v-if="$route.params.type=='crops'"/>
+        </b-col>
+      </b-row>
+      <b-row no-gutters class="pt-1" v-if="$route.params.type=='seedsDiseases'">
+        <b-col class="ml-2 d-flex justify-content-center" v-for="item in cartItems[$route.params.type]" :key="item.id">
+          <DiseaseCards :cartItem="item"/>
         </b-col>
       </b-row>
     </b-container>
@@ -47,6 +52,8 @@ export default {
         return "فصلیں";
       } else if (type == "diseases") {
         return "فصلوں کی بیماریاں";
+      } else if (type == "seedsDiseases") {
+        return "بیج کی بیماریاں";
       }
     }
   }
