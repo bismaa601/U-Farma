@@ -3,7 +3,7 @@
     <b-container class="content-section">
         <b-row no-gutters class="pt-4">
           <b-col>
-            <h1 class="text-center pb-3">خریداری</h1>
+            <h1 class="text-center text-white pb-3">خریداری</h1>
           </b-col>
         </b-row>
         <b-row no-gutters class="pt-5 justify-content-center">
