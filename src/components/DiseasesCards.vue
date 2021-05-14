@@ -12,9 +12,9 @@
         <b-row class="mb-1">
           <b-col class="inline">
             <h4 class="urdu-font">{{cartItem.item}}</h4>
-            <b-button variant="outline-info" class="mt-2" @click="audio(cartItem)">
-              <b-icon icon="volume-up" aria-hidden="true"></b-icon>
-            </b-button>
+<!--            <b-button variant="outline-info" class="mt-2" @click="audio(cartItem)">-->
+<!--              <b-icon icon="volume-up" aria-hidden="true"></b-icon>-->
+<!--            </b-button>-->
           </b-col>
         </b-row>
         <b-row class="mt-3">
