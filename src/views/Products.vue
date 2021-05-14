@@ -10,12 +10,17 @@
         <b-col col="4" lg="4" v-for="item in cartItems[$route.params.type]" :key="item.id">
           <CartCards :cartItem="item" v-if="!['crops','seedsDiseases'].includes($route.params.type)"/>
           <!-- <DiseaseCards :cartItem="item" v-else-if="$route.params.type=='diseases'"/> -->
-          <CropCards :cartItem="item" v-if="$route.params.type=='crops'"/>
+<!--          <CropCards :cartItem="item" v-if="$route.params.type=='crops'"/>-->
         </b-col>
       </b-row>
       <b-row no-gutters class="pt-1" v-if="$route.params.type=='seedsDiseases'">
         <b-col class="ml-2 d-flex justify-content-center" v-for="item in cartItems[$route.params.type]" :key="item.id">
           <DiseaseCards :cartItem="item"/>
+        </b-col>
+      </b-row>
+      <b-row no-gutters class="pt-1" v-if="$route.params.type=='crops'">
+        <b-col class="ml-2 d-flex justify-content-center" v-for="item in cartItems['cropsDiseases']" :key="item.id">
+          <CropDisease :cartItem="item"/>
         </b-col>
       </b-row>
     </b-container>
@@ -27,10 +32,12 @@ import CartCards from '../components/CartCards';
 import DiseaseCards from '../components/DiseasesCards';
 import CropCards from '../components/CropsCards';
 import {mapGetters} from "vuex";
+import CropDisease from "../components/CropDisease";
 
 export default {
   name: 'Products',
   components: {
+    CropDisease,
     CartCards,
     DiseaseCards,
     CropCards
