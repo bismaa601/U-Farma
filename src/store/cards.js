@@ -21,13 +21,13 @@ export default {
                 title: 'کیڑے مار ادویات'
             },
             {
-                id: 3,
+                id: 4,
                 src: './../assets/crops.jpg',
                 route: '/product/crops',
                 title: 'فصلوں کی بیماریں'
             },
             {
-                id: 3,
+                id: 5,
                 src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKgkdg9KB51ZeuzebQYbG0aGfW-wxkvMv8CnGvrvVQgKjUNGB_Dw594VOvSwcjZjN6AcE&usqp=CAU',
                 route: '/product/seedsDiseases',
                 title: 'بیج کی بیماریں'

@@ -1,13 +1,25 @@
 <template>
   <div class="main">
     <b-container class="content-section">
-        <b-row no-gutters class="pt-4">
+        <b-row no-gutters>
           <b-col>
             <h1 class="text-center text-white pb-3">خریداری</h1>
           </b-col>
         </b-row>
         <b-row no-gutters class="pt-5 justify-content-center">
-          <b-col col="4" lg="4" v-for="card in categories" :key="card.id">
+          <b-col col="4" lg="4" v-for="card in categories" :key="card.id" v-if="![4,5].includes(card.id)">
+            <router-link :to="card.route">
+              <ProductCards :product="card"/>
+            </router-link>
+          </b-col>
+        </b-row>
+        <b-row no-gutters class="pt-4">
+          <b-col>
+            <h1 class="text-center text-white">معلومات</h1>
+          </b-col>
+        </b-row>
+        <b-row no-gutters class="pt-5 justify-content-center" >
+          <b-col col="4" lg="4" v-for="card in categories" :key="card.id" v-if="[4,5].includes(card.id)">
             <router-link :to="card.route">
               <ProductCards :product="card"/>
             </router-link>
