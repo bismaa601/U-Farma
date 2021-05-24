@@ -26,12 +26,42 @@
         </b-row>
       </b-card-text>
       <!-- <b-button href="#" variant="primary" class="w-100 urdu-font" @click="showModal = !showModal">خریدنا</b-button> -->
-      <b-button href="#" variant="primary" class="w-100 urdu-font" @click="addToCart(cartItem)">
-        ({{ total(cartItem) }})خریدنا
+      <b-button href="#" variant="primary" class="w-100 urdu-font" @click="add">
+       خریدنا
       </b-button>
     </b-card>
 
+    <div>
+      <b-modal :ref="`cartItem${cartItem.id}`" title="اسٹاک"
+               centered
+               hide-footer>
+        <b-row v-if="cart.length" v-for="(item,index) in cart" :key="index">
+          <b-col cols="1">{{ index + 1 }}.</b-col>
+          <b-col cols="3">{{ item.item }}</b-col>
+          <b-col class="d-flex justify-content-end">
+            <b-button href="#" variant="outline-primary" class="btn btn-qty mx-1 urdu-font"
+                      @click="decreaseQty(item)">کم
+            </b-button>
 
+            <b-form-group
+                label-for="name-input"
+                invalid-feedback="Name is required"
+            >
+              <b-form-input
+                  id="name-input"
+                  v-model="item.qty"
+                  required
+                  class="qty"
+              ></b-form-input>
+            </b-form-group>
+            <b-button href="#" variant="outline-primary" class="btn btn-qty mx-1 urdu-font"
+                      @click="increaseQty(item)">
+              زیادہ
+            </b-button>
+          </b-col>
+        </b-row>
+      </b-modal>
+    </div>
   </div>
 </template>
 
@@ -53,10 +83,10 @@ export default {
     }
   },
   computed: {
-    ...mapGetters('card', ['cart'])
+    ...mapGetters('card', ['cart']),
   },
   methods: {
-    ...mapActions('card', ['addToCart']),
+    ...mapActions('card', ['addToCart', 'decreaseQty', 'increaseQty', 'clearCart']),
     total(item) {
       let qty = 0;
       this.cart.forEach(i => {
@@ -65,6 +95,10 @@ export default {
         }
       })
       return qty;
+    },
+    add() {
+      this.addToCart(this.cartItem)
+      this.$refs[`cartItem${this.cartItem.id}`].show()
     },
     audio(cartItem) {
       var sound = new Audio(cartItem.audio);
