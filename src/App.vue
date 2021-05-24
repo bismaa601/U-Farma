@@ -99,6 +99,6 @@ body, html {
 }
 
 .cs {
-  padding-top: 80px;
+  padding-top: 40px;
 }
 </style>
