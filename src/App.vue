@@ -1,7 +1,10 @@
 <template>
   <div id="app">
-    <Navbar/>
-    <router-view class="cs"/>
+    <img src="/assets/logo.jpg" v-if="showLogo" width="100%" height="100%"/>
+    <div v-else>
+      <Navbar/>
+      <router-view class="cs"/>
+    </div>
   </div>
 </template>
 
@@ -18,8 +21,18 @@ export default {
   computed: {
     ...mapGetters('card', ['cart'])
   },
+  data() {
+    return {
+      showLogo: true,
+    }
+  },
   methods: {
     ...mapActions('card', ['updateCart'])
+  },
+  mounted() {
+    setTimeout(() => {
+      this.showLogo = false
+    }, 3000)
   },
   watch: {
     'cart': {
