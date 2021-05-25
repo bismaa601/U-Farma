@@ -9,7 +9,7 @@
         @hide="$emit('hide',null)"
     >
       <b-container>
-        <div v-if="!info">
+        <div v-if="step===1">
           <b-row class="mb-1 text-center">
             <b-col cols="3"></b-col>
             <b-col>مقدار</b-col>
@@ -40,7 +40,21 @@
             </b-col>
           </b-row>
         </div>
-        <div v-else>
+        <div v-if="step===2">
+          <b-row class="mb-1 text-center mb-3">
+            <b-col cols="6" style="cursor: pointer">
+              <img src="../assets/jazzcash.png" alt="JazzCash logo" width="200" class="border"
+                   @click="++step"
+              >
+            </b-col>
+            <b-col style="cursor: pointer">
+              <img src="../assets/COD.png" alt="COD logo" width="200" height="90" class="border"
+                   @click="++step"
+              >
+            </b-col>
+          </b-row>
+        </div>
+        <div v-if="step===3">
           <b-form-group
               id="input-group-1"
               label="Email address:"
@@ -83,21 +97,22 @@
             ></b-form-textarea>
           </b-form-group>
         </div>
-        <div class="d-flex flex-row justify-content-end" v-if="!info">
+        <div class="d-flex flex-row justify-content-end" v-if="step===1">
           <b-button variant="primary"
-                    @click="info=!info"
+                    @click="++step"
                     class="btn float-left"
           >خریداری
           </b-button>
         </div>
         <div v-else>
           <b-button variant="primary"
-                    @click="info=false"
+                    @click="--step"
                     class="btn float-left mr-1"
           >پیچھے
 
           </b-button>
           <b-button variant="primary"
+                    v-if="step===3"
                     @click="clear"
                     :disabled="!form.email || !form.name || !form.number || !form.address"
                     class="btn float-left mr-1"
@@ -121,7 +136,10 @@ export default {
   },
   data() {
     return {
-      info: false,
+      step: 1,
+      paymentFlag: false,
+      formFlag: false,
+      info: true,
       form: {},
     }
   },
