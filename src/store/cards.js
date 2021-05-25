@@ -513,7 +513,10 @@ export default {
                     des1: 'This common plant disease is brought about by warm environments and high contents of nitrogen in the soil.',
                     audio: './../audio/aphids.mp3',
                     cure: 'مناسب فولانی فنگسائڈس کے استعمال سے بیماری پر قابو پایا جاسکتا ہے۔\n',
-                    symptoms: 'پتیوں پر پانی سے بھیگے ہوئے چھوٹے دھبے؛ آنکھ کی شکل میں پانی میں بھیگے ہوئے لمبے لمبے مقامات۔ لال بھوری مرکز کے ساتھ بھوسے کے رنگ کے گھاووں کی نشاندہی پانی سے لگی گھاووں سے ہوتی ہے۔'
+                    symptoms: 'پتیوں پر پانی سے بھیگے ہوئے چھوٹے دھبے؛ آنکھ کی شکل میں پانی میں بھیگے ہوئے لمبے لمبے مقامات۔ لال بھوری مرکز کے ساتھ بھوسے کے رنگ کے گھاووں کی نشاندہی پانی سے لگی گھاووں سے ہوتی ہے۔',
+                    description_audio: './../audio/seeds_disease/ISspot_Description.ogg',
+                    symptoms_audio: './../audio/seeds_disease/ISspot_Alaamat.ogg',
+                    treatment_audio: './../audio/seeds_disease/ISspot_Ilaaj.ogg',
                 },
                 {
                     id: 1,
@@ -523,7 +526,10 @@ export default {
                     des1: 'This common plant disease is brought about by warm environments and high contents of nitrogen in the soil.',
                     audio: './../audio/aphids.mp3',
                     cure: 'اس بیماری کو سنبھالنے کا سب سے مؤثر طریقہ گنے کی مزاحم قسموں کے استعمال سے ہے۔ اگر اس قسم کے پودے لگائیں جو بیماری کا شکار ہو تو اسے خشک  مٹی میں لگائیں\n',
-                    symptoms: 'جڑیں نہیں قائم کرتا ہے؛ سیٹ کے مرکزی نرم حصے میں سرخ رنگین رنگت آتی ہے جو بھوری رنگ کا ہو جاتا ہے۔ متاثرہ انٹنوڈس میں گہا۔ بڑی عمر کے کین میں پتے زرد ہو سکتے ہیں اور پودوں کا مرجھایا ہوا دکھائی دیتا ہے۔ کٹے تنوں میں انناس کی ایک مضبوط بو ہے\n'
+                    symptoms: 'جڑیں نہیں قائم کرتا ہے؛ سیٹ کے مرکزی نرم حصے میں سرخ رنگین رنگت آتی ہے جو بھوری رنگ کا ہو جاتا ہے۔ متاثرہ انٹنوڈس میں گہا۔ بڑی عمر کے کین میں پتے زرد ہو سکتے ہیں اور پودوں کا مرجھایا ہوا دکھائی دیتا ہے۔ کٹے تنوں میں انناس کی ایک مضبوط بو ہے\n',
+                    description_audio: './../audio/seeds_disease/AnanaskiBimari_Alaamat.ogg',
+                    symptoms_audio: './../audio/seeds_disease/AnanaskiBimari_Description.ogg',
+                    treatment_audio: './../audio/seeds_disease/AnanaskiBimari_Ilaaj.ogg',
                 },
                 {
                     id: 2,
@@ -533,7 +539,10 @@ export default {
                     des1: 'This common plant disease is brought about by warm environments and high contents of nitrogen in the soil.',
                     audio: './../audio/aphids.mp3',
                     cure: 'گنے کی مزاحم اقسام کے پودے لگانا اس بیماری پر قابو پانے کا سب سے موثر طریقہ ہے۔ انوکولم کی سطح کو کم کرنے کے لئے پودے لگانے سے فصلوں کا ملبہ ہٹائیں۔ بیمار پودوں؛ اگر فصل کی مختلف قسم کی فصل کاشت کی جائے تو فورا فصل کاشت کریں۔ بیج کے ٹکڑوں کو پودے لگانے سے پہلے گرم پانی سے علاج کرنے سے بیماری کے واقعات کو کم کیا جاسکتا ہے لیکن فولر فنگسائڈ ایپلی کیشن کنٹرول کا غیر موثر طریقہ ثابت ہوا ہے',
-                    symptoms: 'زرد ، خشک پتے؛ پتی مڈریبس پر لمبے لمبے سرخ گھاووں کی وجہ سے جو ایک بھوسے کا پیلے رنگ کا مرکز بن سکتا ہے۔ ڈنڈے کو لمبے لمبے حصے میں تقسیم کرنے سے سفید علاقوں کی طرف سے رکاوٹ ٹشو کے سرخ رنگ کے پیچ پڑتے ہیں۔ عروقی ٹشو بھی سرخ ہوسکتے ہیں'
+                    symptoms: 'زرد ، خشک پتے؛ پتی مڈریبس پر لمبے لمبے سرخ گھاووں کی وجہ سے جو ایک بھوسے کا پیلے رنگ کا مرکز بن سکتا ہے۔ ڈنڈے کو لمبے لمبے حصے میں تقسیم کرنے سے سفید علاقوں کی طرف سے رکاوٹ ٹشو کے سرخ رنگ کے پیچ پڑتے ہیں۔ عروقی ٹشو بھی سرخ ہوسکتے ہیں',
+                    description_audio: './../audio/seeds_disease/Lefiskid_Alaamat.ogg',
+                    symptoms_audio: './../audio/seeds_disease/Lefiskid_Description.ogg',
+                    treatment_audio: './../audio/seeds_disease/Lefiskid_Ilaaj.ogg',
 
                 },
                 {
@@ -544,8 +553,10 @@ export default {
                     des1: 'This common plant disease is brought about by warm environments and high contents of nitrogen in the soil.',
                     audio: './../audio/aphids.mp3',
                     cure: 'گنے کی مختلف اقسام کے پودے لگانے سے اس مرض کو کامیابی کے ساتھ قابو کیا جاسکتا ہے جو بیماری سے مزاحم ہیں۔ کاشت سے پہلے گرم پانی کے علاج سے بیج کے ٹکڑوں سے بیماری کو عام طور پر ختم کیا جاسکتا ہے۔ متاثرہ پودوں کو ختم کرنا چاہئے',
-                    symptoms: 'گنے کے پاخانے کی مستحکم نمو؛ ٹیلرز کی بے حد پیداوار؛ قصر انٹرنڈس؛ تنگ ، کھڑے پتے کے ساتھ پتلی تنوں؛ ٹرمینل بڈ سے نکلنے والی سیاہ کوڑے کی طرح کی ساخت\n'
-
+                    symptoms: 'گنے کے پاخانے کی مستحکم نمو؛ ٹیلرز کی بے حد پیداوار؛ قصر انٹرنڈس؛ تنگ ، کھڑے پتے کے ساتھ پتلی تنوں؛ ٹرمینل بڈ سے نکلنے والی سیاہ کوڑے کی طرح کی ساخت\n',
+                    description_audio: './../audio/seeds_disease/GannekDhuwanKiBimari_Description.ogg',
+                    symptoms_audio: './../audio/seeds_disease/GannekDhuwanKiBimari_Alaamat.ogg',
+                    treatment_audio: './../audio/seeds_disease/GannekDhuwanKiBimari_Ilaaj.ogg',
                 },
                 {
                     id: 4,
@@ -555,8 +566,10 @@ export default {
                     des1: 'This common plant disease is brought about by warm environments and high contents of nitrogen in the soil.',
                     audio: './../audio/aphids.mp3',
                     cure: 'بیماری کی روک تھام کا سب سے موثر طریقہ یہ ہے کہ گنے کی مزاحم قسمیں لگائیں۔ پودے لگانے سے قبل مٹی کو صاف کرنے کے لئے گرم پانی سے بیج کے چھڑی کا علاج اس بیماری سے بچنے میں مددگار ثابت ہوسکتا ہے',
-                    symptoms: 'سفید "پنسل لائن" پتی لامینہ کی پوری لمبائی میں توسیع۔ پتے کے نکات خشک ہوجاتے ہیں جس کا نتیجہ خاک میں ملتا ہے'
-
+                    symptoms: 'سفید "پنسل لائن" پتی لامینہ کی پوری لمبائی میں توسیع۔ پتے کے نکات خشک ہوجاتے ہیں جس کا نتیجہ خاک میں ملتا ہے',
+                    description_audio: './../audio/seeds_disease/Lefiskid_Description.ogg',
+                    symptoms_audio: './../audio/seeds_disease/Lefiskid_Alaamat.ogg',
+                    treatment_audio: './../audio/seeds_disease/Lefiskid_Ilaaj.ogg',
                 },
                 {
                     id: 5,
@@ -566,7 +579,10 @@ export default {
                     des1: 'This common plant disease is brought about by warm environments and high contents of nitrogen in the soil.',
                     audio: './../audio/aphids.mp3',
                     cure: 'گنے کی وہ اقسام لگائیں جو وائرس سے روادار ہیں',
-                    symptoms: 'پتیوں پر متضاد گرینس کے الگ الگ نمونے یعنی گہرا سبز پیچ جس میں گھیرے ہوئے ہلکے سبز ہیں۔ پتیوں کا سرخ ہونا۔ علامات 4 مختلف وائرسوں کی وجہ سے ہوسکتی ہیں'
+                    symptoms: 'پتیوں پر متضاد گرینس کے الگ الگ نمونے یعنی گہرا سبز پیچ جس میں گھیرے ہوئے ہلکے سبز ہیں۔ پتیوں کا سرخ ہونا۔ علامات 4 مختلف وائرسوں کی وجہ سے ہوسکتی ہیں',
+                    description_audio: './../audio/seeds_disease/GanneKaMozikVirus_Description.ogg',
+                    symptoms_audio: './../audio/seeds_disease/GanneKaMozikVirus_Alaamat.ogg',
+                    treatment_audio: './../audio/seeds_disease/GanneKaMozikVirus_Ilaaj.ogg',
 
                 },
                 {
@@ -578,8 +594,7 @@ export default {
                     audio: './../audio/aphids.mp3',
                     cure: 'متاثرہ پتے کو چھلنی کریں۔ پودوں کے ارد گرد نمی کو کم کرنے اور ہوا کی گردش کو فروغ دینے کے لئے پودوں کی کافی وقفہ کاری کا استعمال کریں۔ مناسب فولانی فنگسائڈ کے استعمال سے بیماری پر قابو پایا جاسکتا ہے',
                     symptoms: 'پیلے رنگ کے ہالوں سے گھرا ہوا پتوں پر گہری بھوری گھاو؛ گھاووں اکٹھا ہوجاتا ہے اور فاسد کی شکل اختیار کرلیتا ہے اور اس کی وجہ سے پتے بھڑک جاتے ہیں\n' +
-                        'بیماریوں کا خروج گرم موسم اور متواتر بارش کے حق میں ہوتا ہے۔ فنگس فصل کے ملبے میں یا موزوں ماتمی لباس میں زندہ رہ سکتا ہے۔ بیماری متاثرہ بیج کے ذریعے پھیل سکتی ہے\n'
-
+                        'بیماریوں کا خروج گرم موسم اور متواتر بارش کے حق میں ہوتا ہے۔ فنگس فصل کے ملبے میں یا موزوں ماتمی لباس میں زندہ رہ سکتا ہے۔ بیماری متاثرہ بیج کے ذریعے پھیل سکتی ہے\n',
                 },
                 {
                     id: 7,
