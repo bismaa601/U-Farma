@@ -23,6 +23,11 @@
           <CropDisease :cartItem="item"/>
         </b-col>
       </b-row>
+      <b-row no-gutters class="pt-1" v-if="$route.params.type=='seeds-grow'">
+        <b-col class="ml-2 d-flex justify-content-center" >
+         <SeedsGrow/>
+        </b-col>
+      </b-row>
     </b-container>
   </div>
 </template>
@@ -33,10 +38,12 @@ import DiseaseCards from '../components/DiseasesCards';
 import CropCards from '../components/CropsCards';
 import {mapGetters} from "vuex";
 import CropDisease from "../components/CropDisease";
+import SeedsGrow from "../components/SeedsGrow";
 
 export default {
   name: 'Products',
   components: {
+    SeedsGrow,
     CropDisease,
     CartCards,
     DiseaseCards,
@@ -59,6 +66,8 @@ export default {
         return "فصلیں";
       } else if (type == "diseases") {
         return "فصلوں کی بیماریاں";
+      } else if (type == "seeds-grow") {
+        return " بیجوں اور پودوں کی افزائش";
       } else if (type == "seedsDiseases") {
         return "بیج کی بیماریاں";
       }

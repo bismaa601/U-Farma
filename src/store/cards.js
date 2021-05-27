@@ -32,6 +32,12 @@ export default {
                 route: '/product/seedsDiseases',
                 title: 'بیج کی بیماریں'
             },
+            {
+                id: 4,
+                src: '/assets/seedType.jpg',
+                route: '/product/seeds-grow',
+                title: ' بیجوں اور پودوں کی افزائش'
+            },
         ],
         cartItems: {
             fertilizers: [

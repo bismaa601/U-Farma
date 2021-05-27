@@ -39,8 +39,17 @@
         <li class="nav-item active">
           <RouterLink to="/product/crops">
             <a class="nav-link" href="#">
-              <i class="fa fa-sun-o"></i>
+              <i class="fa fa-ban"></i>
               Disease
+              <span class="sr-only">(current)</span>
+
+            </a></RouterLink>
+        </li>
+        <li class="nav-item active">
+          <RouterLink to="/product/seedsDiseases">
+            <a class="nav-link" href="#">
+              <i class="fa fa-ban"></i>
+              Seed Diseases
               <span class="sr-only">(current)</span>
 
             </a></RouterLink>
