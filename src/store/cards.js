@@ -48,7 +48,8 @@ export default {
                     des: '',
                     price: 'Rs. 4,100',
                     type: 'fertilizers',
-                    audio: './../audio/dap.mp3'
+                    audio: './../audio/fertilizers/dap.mp3',
+
                 },
                 {
                     id: 1,
@@ -528,6 +529,7 @@ export default {
                     description_audio: './../audio/disease/ISspot_Description.ogg',
                     symptoms_audio: './../audio/disease/ISspot_Alaamat.ogg',
                     treatment_audio: './../audio/disease/ISspot_Ilaaj.ogg',
+                    name_audio: './../audio/crops_disease/1.mp3',
                 },
                 {
                     id: 1,
@@ -541,6 +543,7 @@ export default {
                     description_audio: './../audio/disease/AnanaskiBimari_Alaamat.ogg',
                     symptoms_audio: './../audio/disease/AnanaskiBimari_Description.ogg',
                     treatment_audio: './../audio/disease/AnanaskiBimari_Ilaaj.ogg',
+                    name_audio: './../audio/crops_disease/2.mp3',
                 },
                 {
                     id: 2,
@@ -554,6 +557,7 @@ export default {
                     description_audio: './../audio/disease/Lefiskid_Alaamat.ogg',
                     symptoms_audio: './../audio/disease/Lefiskid_Description.ogg',
                     treatment_audio: './../audio/disease/Lefiskid_Ilaaj.ogg',
+                    name_audio: './../audio/crops_disease/3.mp3',
 
                 },
                 {
@@ -568,6 +572,7 @@ export default {
                     description_audio: './../audio/disease/GannekDhuwanKiBimari_Description.ogg',
                     symptoms_audio: './../audio/disease/GannekDhuwanKiBimari_Alaamat.ogg',
                     treatment_audio: './../audio/disease/GannekDhuwanKiBimari_Ilaaj.ogg',
+                    name_audio: './../audio/crops_disease/4.mp3',
                 },
                 {
                     id: 4,
@@ -581,6 +586,7 @@ export default {
                     description_audio: './../audio/disease/Lefiskid_Description.ogg',
                     symptoms_audio: './../audio/disease/Lefiskid_Alaamat.ogg',
                     treatment_audio: './../audio/disease/Lefiskid_Ilaaj.ogg',
+                    name_audio: './../audio/crops_disease/5.mp3',
                 },
                 {
                     id: 5,
@@ -594,6 +600,7 @@ export default {
                     description_audio: './../audio/disease/GanneKaMozikVirus_Description.ogg',
                     symptoms_audio: './../audio/disease/GanneKaMozikVirus_Alaamat.ogg',
                     treatment_audio: './../audio/disease/GanneKaMozikVirus_Ilaaj.ogg',
+                    name_audio: './../audio/crops_disease/6.mp3',
 
                 },
                 {
@@ -606,6 +613,7 @@ export default {
                     cure: 'متاثرہ پتے کو چھلنی کریں۔ پودوں کے ارد گرد نمی کو کم کرنے اور ہوا کی گردش کو فروغ دینے کے لئے پودوں کی کافی وقفہ کاری کا استعمال کریں۔ مناسب فولانی فنگسائڈ کے استعمال سے بیماری پر قابو پایا جاسکتا ہے',
                     symptoms: 'پیلے رنگ کے ہالوں سے گھرا ہوا پتوں پر گہری بھوری گھاو؛ گھاووں اکٹھا ہوجاتا ہے اور فاسد کی شکل اختیار کرلیتا ہے اور اس کی وجہ سے پتے بھڑک جاتے ہیں\n' +
                         'بیماریوں کا خروج گرم موسم اور متواتر بارش کے حق میں ہوتا ہے۔ فنگس فصل کے ملبے میں یا موزوں ماتمی لباس میں زندہ رہ سکتا ہے۔ بیماری متاثرہ بیج کے ذریعے پھیل سکتی ہے\n',
+                    name_audio: './../audio/crops_disease/7.mp3',
                 },
                 {
                     id: 7,
@@ -617,7 +625,8 @@ export default {
                     cure: '\n' +
                         'سورج مکھی کی انواع کو پودے لگائیں جو کہ ڈاؤن پھپھوندی کے خلاف سے پہلے مزاحم ہیں۔ کاشت کرنے بیجوں کو مناسب فنگسائڈ کے ساتھ علاج کریں۔ فولانی فنگسائڈس سیسٹیمیٹک انفیکشن کو کنٹرول کرنے میں غیر موثر ہیں اور ان کی سفارش نہیں کی جاتی ہے\n',
                     symptoms: '\n' +
-                        'کھیتوں میں پودوں کی موت جس کا نتیجہ کم ہو جاتا ہے۔ اگر بیج زندہ رہے تو وہ گھنے پتوں کے ساتھ کلورٹک ہوسکتے ہیں۔ سفید کپاس کی نمو پتی کے نیچے کی سطح پر موجود ہے۔ سیسٹیمیٹک انفیکشن پودوں کی افزائش اور بیج کی پیداوار کو کم کرنے کا سبب بنتا ہے\n'
+                        'کھیتوں میں پودوں کی موت جس کا نتیجہ کم ہو جاتا ہے۔ اگر بیج زندہ رہے تو وہ گھنے پتوں کے ساتھ کلورٹک ہوسکتے ہیں۔ سفید کپاس کی نمو پتی کے نیچے کی سطح پر موجود ہے۔ سیسٹیمیٹک انفیکشن پودوں کی افزائش اور بیج کی پیداوار کو کم کرنے کا سبب بنتا ہے\n',
+                    name_audio: './../audio/crops_disease/8.mp3',
 
                 },
                 {
@@ -629,7 +638,8 @@ export default {
                     audio: './../audio/aphids.mp3',
                     cure: 'پودوں کے درمیان مناسب وقفہ کرنے کی اجازت دیں تاکہ پودوں کے گرد اچھی ہوا کی گردش کو فروغ دیا جاسکے۔ کسی ایسے علاقے میں سورج مکھی کا پودے لگائیں جس میں دن کے بیشتر حصے کو پورا سورج ملتا ہو۔ فصل کے تمام سورج مکھی کی فصل کے ملبے کو ختم اور تباہ کردیں۔ مناسب فولری فنگسائڈس کے استعمال سے بیماری پر قابو پانے میں مدد مل سکتی ہے لیکن اس کی دیکھ بھال کی جانی چاہئے کیونکہ کچھ لیبل علاج شدہ پودوں کے بیجوں کو کھانے یا کھانوں کے طور پر استعمال نہیں ہونے دیتے ہیں۔',
                     symptoms: '\n' +
-                        'پاؤڈر وائٹ پیچ جو ابتدائی طور پر کم پتیوں پر ظاہر ہوتے ہیں لیکن جو پودوں کے سب سے اوپر والے زمین تک پھیل سکتے ہیں۔ سفید پیچ رنگ سرمئی رنگ کے ہو رہے ہیں اور سیاہ فنگل پھل پھیلانے والی لاشیں دکھائی دیتی ہیں۔ شدید متاثرہ پتے زرد ہو کر سوکھ سکتے ہیں\n'
+                        'پاؤڈر وائٹ پیچ جو ابتدائی طور پر کم پتیوں پر ظاہر ہوتے ہیں لیکن جو پودوں کے سب سے اوپر والے زمین تک پھیل سکتے ہیں۔ سفید پیچ رنگ سرمئی رنگ کے ہو رہے ہیں اور سیاہ فنگل پھل پھیلانے والی لاشیں دکھائی دیتی ہیں۔ شدید متاثرہ پتے زرد ہو کر سوکھ سکتے ہیں\n',
+                    name_audio: './../audio/crops_disease/9.mp3',
 
                 },
             ],
