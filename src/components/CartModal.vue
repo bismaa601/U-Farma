@@ -81,6 +81,7 @@
 
           <b-form-group id="input-group-2" label="Phone Number:" label-for="input-2">
             <b-form-input
+                type="number"
                 id="input-2"
                 v-model="form.number"
                 placeholder="Enter Phone"
@@ -114,7 +115,7 @@
           <b-button variant="primary"
                     v-if="step===3"
                     @click="clear"
-                    :disabled="!form.email || !form.name || !form.number || !form.address"
+                    :disabled="!form.name || !form.number || !form.address"
                     class="btn float-left mr-1"
           >مکمل
           </b-button>
